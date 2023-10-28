@@ -1,5 +1,4 @@
-const sqlite3 = require('sqlite3').verbose();
-
+const sqlite3 = require('sqlite3').verbose();const db = new sqlite3.Database('student_database.db')
 let _DBConnection;
 
 const connectDatabase = async () => {
@@ -24,7 +23,10 @@ const closeConnection = conn => {
   }
 };
 
+
+
 module.exports = {
   getDbConnection,
   closeConnection
 };
+
